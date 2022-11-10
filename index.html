@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS only -->
+    <link href="./bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./style/custom.css">
+
+    <title>Web Site DemoBootstrap</title>
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col">
+
+                    <h1>Logo</h1>
+
+                </div>
+                <div class="col">
+                    <ul class="nav justify-content-end">
+                        <li class="nav-item"><a class="nav-link active" href="#top">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#sobre">Sobre</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#produtos">Produtos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </header>
+
+
+    <section id="sobre">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-7 col-sm-12">
+                    <h2>Sobre nós!</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem nobis officia aliquam id
+                        exercitationem
+                        reprehenderit maxime veritatis dolorem, ipsum aut, quos dolores vitae et distinctio vel ea nulla
+                        aspernatur consequuntur.</p>
+                    <a class="btn btn-lg btn-success">Button</a>
+                </div>
+                <div class="col-md-5 col-sm-12">
+                    <img src="./imagens/pexel-sobre.jpg" alt="imagem Sobre" class="img-fluid">
+                </div>
+            </div>
+    </section>
+
+    <section id="produtos">
+
+        <div class="container">
+            <div class="row">
+                <div class="col">
+
+                    <h2>Produtos</h2>
+
+                    <div class="card">
+                        <img src="./imagens/pexels-produto.jpg" alt="imagem produto" class="img-fluid">
+                        <div class="card-body">
+                            <h5 class="card-title">Lorem ipsum dolor.</h5>
+                            <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorum
+                                officiis odio obcaecati harum ipsa quidem amet nobis, dolores rem cupiditate animi
+                                culpa. Et dolorum quam suscipit aperiam laboriosam quas animi!</p>
+                            <a class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-1">Ver Produto</a>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <img src="./imagens/pexels-produto.jpg" alt="imagem produto" class="img-fluid">
+                        <div class="card-body">
+                            <h5 class="card-title">Lorem ipsum dolor.</h5>
+                            <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorum
+                                officiis odio obcaecati harum ipsa quidem amet nobis, dolores rem cupiditate animi
+                                culpa. Et dolorum quam suscipit aperiam laboriosam quas animi!</p>
+                            <a class="btn btn-primary" href="#produto-2">Ver Produto</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="./imagens/pexels-produto.jpg" alt="imagem produto" class="img-fluid">
+                        <div class="card-body">
+                            <h5 class="card-title">Lorem ipsum dolor.</h5>
+                            <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                                Dolorum
+                                officiis odio obcaecati harum ipsa quidem amet nobis, dolores rem cupiditate
+                                animi
+                                culpa. Et dolorum quam suscipit aperiam laboriosam quas animi!</p>
+                            <a class="btn btn-primary" href="#produto-3">Ver Produto</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contato">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-sm-12">
+                    <h2>Contato</h2>
+                    <p>Ficou interessado? Preencha os campos do formulário para receber uma cotação.</p>
+
+                </div>
+                <div class="col">
+                    <form class="form">
+                        <div class="input-group">
+                            <input type="text" class="form-control" name="nome" placeholder="digite seu nome">
+                        </div>
+
+                        <div class="input-group">
+                            <input type="text" class="form-control" name="Email" placeholder="digite seu email">
+                        </div>
+
+                        <div class="input-group">
+                            <textarea class="form-control" name="Assunto" rows="5"
+                                placeholder="Sua Mensagem"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-lg btn-success">Enviar</button>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <div class="modal fade" id="modal-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Produto 1</h5>
+                    <button class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <table class="table table-hover">
+                        <thead>
+                            <tr>
+                                <th>Processador</th>
+                                <th>Valor</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th>i3</th>
+                                <th>R$190</th>
+                            </tr>
+                            <tr>
+                                <th>i5</th>
+                                <th>R$350</th>
+                            </tr>
+                            <tr>
+                                <th>i7</th>
+                                <th>R$600</th>
+                            </tr>
+                        </tbody>
+
+                    </table>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                        Close
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="./bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
