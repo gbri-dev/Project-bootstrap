@@ -14,13 +14,11 @@
 
 <body>
 
-    <header>
+    <header class="desktop">
         <div class="container">
             <div class="row">
                 <div class="col">
-
                     <h1>Logo</h1>
-
                 </div>
                 <div class="col">
                     <ul class="nav justify-content-end">
@@ -28,14 +26,12 @@
                         <li class="nav-item"><a class="nav-link" href="#sobre">Sobre</a></li>
                         <li class="nav-item"><a class="nav-link" href="#produtos">Produtos</a></li>
                         <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
-
                     </ul>
                 </div>
             </div>
         </div>
 
     </header>
-
 
     <section id="sobre">
         <div class="container">
@@ -101,7 +97,7 @@
         </div>
     </section>
 
-    <section id="contato">
+    <section id="contato" class="text-bg-primary">
         <div class="container">
             <div class="row">
                 <div class="col-md-6 col-sm-12">
@@ -131,34 +127,47 @@
         </div>
     </section>
 
+    <footer class="text-bg-secondary">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h6>&COPY; Todos os direitos autorais reservados pela TechGolinfo.</h6>
+                </div>
+            </div>
+        </div>
+    </footer>
 
     <div class="modal fade" id="modal-1">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title">Produto 1</h5>
+                    <h5 class="modal-title">Placa-Mãe</h5>
                     <button class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
                     <table class="table table-hover">
                         <thead>
                             <tr>
-                                <th>Processador</th>
-                                <th>Valor</th>
+                                <th>Motherboards</th>
+                                <th>Chipset</th>
+                                <th>Preço</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
-                                <th>i3</th>
-                                <th>R$190</th>
+                                <th>Asus TUF Gaming B550M-Plus</th>
+                                <th>AMD B550</th>
+                                <th>R$999,00</th>
                             </tr>
                             <tr>
-                                <th>i5</th>
-                                <th>R$350</th>
+                                <th>Asus TUF Gaming Z690-Plus D4</th>
+                                <th>Z690</th>
+                                <th>R$1399,00</th>
                             </tr>
                             <tr>
-                                <th>i7</th>
-                                <th>R$600</th>
+                                <th>Asus TUF Gaming X570-Plus</th>
+                                <th>AMD X570</th>
+                                <th>R$1549,99</th>
                             </tr>
                         </tbody>
 
@@ -166,7 +175,7 @@
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
-                        Close
+                        Fechar
                     </button>
                 </div>
             </div>
@@ -191,11 +200,6 @@
                         </thead>
                         <tbody>
                             <tr>
-                                <th>i7-11700k</th>
-                                <th>Intel UHD Graphics 750</th>
-                                <th>R$2870,47</th>
-                            </tr>
-                            <tr>
                                 <th>Ryzen 7 5700G</th>
                                 <th>Vega 8</th>
                                 <th>R$1916,47</th>
@@ -205,13 +209,18 @@
                                 <th>Radeon Graphics RDNA2</th>
                                 <th>R$2398,82</th>
                             </tr>
+                            <tr>
+                                <th>i7-11700k</th>
+                                <th>Intel UHD Graphics 750</th>
+                                <th>R$2870,47</th>
+                            </tr>
                         </tbody>
 
                     </table>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
-                        Close
+                        Fechar
                     </button>
                 </div>
             </div>
@@ -256,7 +265,7 @@
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
-                        Close
+                        Fechar
                     </button>
                 </div>
             </div>
