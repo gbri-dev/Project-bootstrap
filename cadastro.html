@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- CSS only -->
-    <link href="./bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="./libs/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="./style/custom.css">
     <link rel="stylesheet" href="./style/custom-form.css">
     <link rel="shortcut icon" href="./imagens/favicon-motherboard-64.png" type="image/x-icon">
@@ -135,13 +135,19 @@
                     <h6>Preencha os campos para receber novidades e promoções.</h6>
 
                     <form class="form-inline">
-                        <input type="text" class="form-control-sm mb-2" name="nome" placeholder="Nome">
-                        <input type="text" class="form-control-sm mb-2" name="email" placeholder="Email" required>
-                        <button type="submit" class="btn btn-success mb-2">Receber Novidades</button>
+                        <div class="row">
+                            <div class="col">
+                                <input type="text" class="form-control-sm mb-2" name="nome" placeholder="Nome">
+                                <input type="text" class="form-control form-control-sm mb-2" name="email"
+                                    placeholder="Email" required>
+                                <button type="submit" class="btn btn-sm btn-outline-success">Receber
+                                    Novidades</button>
+                            </div>
+                        </div>
                     </form>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary mb-2" data-bs-dismiss="modal">Fechar</button>
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
                 </div>
             </div>
         </div>
@@ -160,7 +166,7 @@
     </footer>
 
     <!-- JavaScript Bundle with Popper -->
-    <script src="./bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="./libs/bootstrap/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>

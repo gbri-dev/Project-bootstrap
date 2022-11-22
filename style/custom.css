@@ -3,6 +3,7 @@ header {
     -webkit-box-shadow: 0px 4px 15px 2px rgba(0, 0, 0, 0.75);
     -moz-box-shadow: 0px 4px 15px 2px rgba(0, 0, 0, 0.75);
     box-shadow: 0px 4px 9px -2px rgba(0, 0, 0, 0.75);
+    margin-bottom: 100px;
 }
 
 @media (max-Width: 996px) {
@@ -63,4 +64,33 @@ footer {
 
 .gbri:hover {
     color: white;
+}
+
+.carousel-item {
+    height: 350px;
+}
+
+@media(max-width: 1190px) {
+    .carousel-item {
+        height: auto;
+    }
+
+    .header {
+        margin-bottom: 50px;
+    }
+}
+
+.links-icons-yt {
+    text-decoration: none;
+    color: red;
+}
+
+.links-icons-fb {
+    text-decoration: none;
+    color: blue;
+}
+
+.links-icons-inst {
+    text-decoration: none;
+    color: rebeccapurple;
 }
