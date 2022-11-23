@@ -72,7 +72,7 @@ footer {
 
 @media(max-width: 1190px) {
     .carousel-item {
-        height: 650px;
+        height: auto;
     }
 
     .header {
