@@ -45,17 +45,19 @@
                 </div>
                 <div class="row">
                     <div class="col">
-                        <form class="form">
+                        <form class="form" id="contato-wp">
                             <div class="form-row">
                                 <div class="row">
                                     <div class="col">
                                         <div class="input-group">
-                                            <input type="text" class="form-control" name="nome" placeholder="Nome">
+                                            <input id="nome" type="text" class="form-control" name="nome"
+                                                placeholder="Nome">
                                         </div>
                                     </div>
                                     <div class="col">
                                         <div class="input-group">
-                                            <input type="text" class="form-control" name="Email" placeholder="Email">
+                                            <input id="email" type="text" class="form-control" name="Email"
+                                                placeholder="Email">
                                         </div>
                                     </div>
                                 </div>
@@ -134,7 +136,7 @@
                 <div class="modal-body">
                     <h6>Preencha os campos para receber novidades e promoções.</h6>
 
-                    <form class="form-inline">
+                    <form class="form-inline" id="meuFormulario">
                         <div class="row">
                             <div class="col">
                                 <input type="text" class="form-control-sm mb-2" name="nome" placeholder="Nome">
@@ -167,6 +169,19 @@
 
     <!-- JavaScript Bundle with Popper -->
     <script src="./libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        <!-- Envia mensagem no whatsapp -->
+        document.getElementById("contato-wp").addEventListener("submit", function (event) {
+            event.preventDefault()
+            let nome = document.getElementById("nome").value;
+            let email = document.getElementById("email").value;
+            let mensagem = document.getElementById("info").value;
+            let mensagemWhatsApp = `Olá! Meu nome é ${nome}. Meu email é ${email}. ${mensagem}`;
+            let linkWhatsApp = `https://wa.me/message/EBOFYCAUESEBP1?text=${encodeURIComponent(mensagemWhatsApp)}`;
+            window.open(linkWhatsApp);
+        })
+    </script>
 </body>
 
 </html>
